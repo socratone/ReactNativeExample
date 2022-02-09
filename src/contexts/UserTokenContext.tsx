@@ -1,6 +1,6 @@
 import React, { createContext, useState } from 'react';
 
-const UserTokenContext = createContext({
+export const UserTokenContext = createContext({
   token: null as string | null,
   handleChangeToken: (token: string | null) => {
     console.log(token);

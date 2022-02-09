@@ -9,23 +9,13 @@
  */
 
 import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import HomeScreen from './src/screens/HomeScreen';
-import ProfileScreen from './src/screens/ProfileScreen';
 import { UserTokenContextProvider } from './src/contexts/UserTokenContext';
-
-const Stack = createNativeStackNavigator();
+import Navigation from './src/Navigation';
 
 const App = () => {
   return (
     <UserTokenContextProvider>
-      <NavigationContainer>
-        <Stack.Navigator initialRouteName="Home">
-          <Stack.Screen name="Home" component={HomeScreen} />
-          <Stack.Screen name="Profile" component={ProfileScreen} />
-        </Stack.Navigator>
-      </NavigationContainer>
+      <Navigation />
     </UserTokenContextProvider>
   );
 };
