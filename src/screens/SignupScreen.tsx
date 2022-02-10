@@ -1,10 +1,12 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Button } from 'react-native';
+import { SignUpScreenProps } from '../types/screens';
 
-function SignupScreen() {
+function SignUpScreen({ navigation }: SignUpScreenProps) {
   return (
     <View style={styles.container}>
-      <Text>Signup Screen</Text>
+      <Text style={styles.title}>SignUp Screen</Text>
+      <Button title="취소" onPress={() => navigation.goBack()} />
     </View>
   );
 }
@@ -15,6 +17,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  title: {
+    fontSize: 20,
+    marginBottom: 10,
+  },
 });
 
-export default SignupScreen;
+export default SignUpScreen;

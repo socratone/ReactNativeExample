@@ -4,7 +4,8 @@ import { View, Text, StyleSheet } from 'react-native';
 function ProfileScreen() {
   return (
     <View style={styles.container}>
-      <Text>Profile Screen</Text>
+      <Text style={styles.title}>Profile Screen</Text>
+      <Text>***님 환영합니다.</Text>
     </View>
   );
 }
@@ -14,6 +15,10 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  title: {
+    fontSize: 20,
+    marginBottom: 10,
   },
 });
 
