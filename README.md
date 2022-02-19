@@ -8,7 +8,7 @@ React Native CLI를 이용한 앱 초기 설정 예제입니다.
 
 ### 설치
 
-`npm i` dependencies 설치\
+`npm i` dependencies 설치
 
 ### iOS Simulator
 
